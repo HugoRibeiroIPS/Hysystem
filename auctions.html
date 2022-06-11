@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auctions.css">
+    <script src="auctions.js"></script>
     <title>Hysystem - An Hypixel Skyblock profile and auction viewer.</title>
 </head>
 <body>
@@ -13,6 +14,13 @@
         <h2><a href="">Auctions</a></h2>
     </header>
     <section id="main">
+        <input id='pesquisa' onkeyup='searchAuctions()' type='text'>
+        <h2>Itens do leilão</h2>
+        <div class="spinner-border" 
+        role="status" id="loading">
+       <span class="sr-only">Loading...</span>
+        </div>
+        <table id="leilao"></table>
     </section>
     <footer>
         <h3>HugoRibeiroIPS - 2022</h3>
